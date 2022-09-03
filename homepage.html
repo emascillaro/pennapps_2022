@@ -18,8 +18,7 @@ body {
   padding-bottom: 40px;
 }
 
-/* Style the header */
-.header {
+.brand_pic {
   padding-bottom: 250px;
   padding-top: 300px;
   text-align: center;
@@ -27,83 +26,83 @@ body {
   color: white;
 }
 
-/* Increase the font size of the h1 element */
-.header h1 {
+.brand_pic h1 {
   font-size: 80px;
   margin: 0px;
 }
 
-.header p {
+.brand_pic p {
   font-size: 20px;
   margin: 0px;
   font-style: italic;
 }
 
-/* Column container */
-.row {  
+.content {  
   display: flex;
   flex-wrap: wrap;
 }
 
-/* Create two unequal columns that sits next to each other */
-/* Sidebar/left column */
-.side {
+.instruction {
   flex: 50%;
   text-align: center;
+  overflow-wrap: break-word;
   float: left;
-  size: 100vh;
+  font-size: 20px;
+  padding: 400px 100px;
 }
 
-/* Main column */
-.main {   
+.image_upload {   
   flex: 50%;
   text-align: center;
   float: right;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding: 400px 0px;
 }
 
-/* Footer */
-.footer {
-  padding: 20px;
+.btn {
+  /* position: absolute; */
   text-align: center;
-  background: #ddd;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%); */
+  background-color: #555;
+  color: white;
+  font-size: 30px;
+  padding: 65px 50px;
+  border: none;
+  cursor: point;
+  border-radius: 5px;
 }
 
-/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+.btn:hover {
+  background-color: black;
+}
+
+
 @media screen and (max-width: 700px) {
-  .row {   
+  .content {   
     flex-direction: column;
   }
 }
 
-/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
-  .navbar a {
-    float: none;
-    width:100%;
-  }
-}
 </style>
 </head>
 <body>
 
-<div class="header">
+<div class="brand_pic">
   <h1>Treefter</h1>
   <p>Conciously shopping</p>
 </div>
 
-<div class="row">
-  <div class="side">
-    <h2>Upload an image</h2>
+<div class="content">
+  <div class="instruction">
+    <p>Treefter scrapes the web for the clothing article that appears in the image
+        you uploaded and provide information about that item that help you shop more
+        consciously and sustainably (including its price range, available materials, carbon footprint.)</p>
   </div>
-  <div class="main">
-    <button class="btn">Here</button>
+  <div class="image_upload">
+    <button class="btn">Upload an image</button>
   </div>
-</div>
-
-<div class="footer">
-  <h2>Footer</h2>
 </div>
 
 </body>
