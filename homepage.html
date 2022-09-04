@@ -1,109 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Treefter</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+  <head>
+    <title>Treefter</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  margin: 0;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+      }
 
-.brand_pic {
-  padding-bottom: 250px;
-  padding-top: 300px;
-  text-align: center;
-  background: #007d2c;
-  color: white;
-}
+      .brand_pic {
+        padding-bottom: 250px;
+        padding-top: 300px;
+        text-align: center;
+        background: #007d2c;
+        color: white;
+      }
 
-.brand_pic h1 {
-  font-size: 80px;
-  margin: 0px;
-}
+      .brand_pic h1 {
+        font-size: 80px;
+        margin: 0px;
+      }
 
-.brand_pic p {
-  font-size: 20px;
-  margin: 0px;
-  font-style: italic;
-}
+      .brand_pic p {
+        font-size: 20px;
+        margin: 0px;
+        font-style: italic;
+      }
 
-.content {  
-  display: flex;
-  flex-wrap: wrap;
-}
+      .content {
+        display: flex;
+        flex-wrap: wrap;
+      }
 
-.instruction {
-  flex: 50%;
-  text-align: center;
-  overflow-wrap: break-word;
-  float: left;
-  font-size: 20px;
-  padding: 400px 100px;
-}
+      .instruction {
+        flex: 50%;
+        text-align: center;
+        overflow-wrap: break-word;
+        float: left;
+        font-size: 20px;
+        padding: 400px 100px;
+      }
 
-.image_upload {   
-  flex: 50%;
-  text-align: center;
-  float: right;
-  padding: 400px 0px;
-}
+      .image_upload {
+        flex: 50%;
+        text-align: center;
+        float: right;
+        padding: 400px 0px;
+      }
 
-.btn {
-  /* position: absolute; */
-  text-align: center;
-  /* top: 50%;
+      .btn {
+        /* position: absolute; */
+        text-align: center;
+        /* top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%); */
-  background-color: #555;
-  color: white;
-  font-size: 30px;
-  padding: 65px 50px;
-  border: none;
-  cursor: point;
-  border-radius: 5px;
-}
+        background-color: #555;
+        color: white;
+        font-size: 30px;
+        padding: 65px 50px;
+        border: none;
+        cursor: point;
+        border-radius: 5px;
+      }
 
-.btn:hover {
-  background-color: black;
-}
+      .btn:hover {
+        background-color: black;
+      }
 
+      @media screen and (max-width: 700px) {
+        .content {
+          flex-direction: column;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Treefter</h1>
+      <p>Conciously shopping</p>
+    </div>
 
-@media screen and (max-width: 700px) {
-  .content {   
-    flex-direction: column;
-  }
-}
+    <div class="row">
+      <div class="side">
+        <h2>Upload an image</h2>
+      </div>
+      <div class="main">
+        <button class="btn">Here</button>
+      </div>
+    </div>
 
-</style>
-</head>
-<body>
-
-<div class="brand_pic">
-  <h1>Treefter</h1>
-  <p>Conciously shopping</p>
-</div>
-
-<div class="content">
-  <div class="instruction">
-    <p>Treefter scrapes the web for the clothing article that appears in the image
-        you uploaded and provide information about that item that help you shop more
-        consciously and sustainably (including its price range, available materials, carbon footprint.)</p>
-  </div>
-  <div class="image_upload">
-    <button class="btn">Upload an image</button>
-  </div>
-</div>
-
-</body>
+    <div class="footer">
+      <h2>Footer</h2>
+    </div>
+  </body>
 </html>
